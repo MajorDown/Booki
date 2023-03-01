@@ -336,18 +336,18 @@ main {
 }
 
 #most-popular .content {
+    aspect-ratio: 345/500;
     width: 82.1%;
-    height: 80%;
     margin: 0px auto;
     margin-top: 30px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 #most-popular .card {
     width: 100%;
-    height: 145px;
+    height: 30%;
     background: white;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.148) 2px 4px 5px 4px;
@@ -358,8 +358,8 @@ main {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+
 }
 
 #most-popular .card-image {
@@ -378,18 +378,21 @@ main {
 }
 
 #most-popular .card-description {
-    width: 50%;
-    height: 85%;
+    width: 52%;
+    height: 90%;
     margin: auto;
-    line-height: 20px;
+    padding-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    line-height: 1.5vw;
 }
 
 #most-popular p {
-    margin-top: 5px;
+    margin-top: 2%;
 }
+
+#most-popular p {}
 
 /**********ACTIVITES********************/
 
@@ -493,32 +496,34 @@ footer {
 
     #most-popular {
         width: 100%;
-        height: 300px;
+        height: 280px;
         flex-direction: row;
-    }
-
-    #most-popular .content {
-        width: 91%;
     }
 
     #most-popular h2 {
         width: 88%;
     }
 
+    #most-popular .content {
+        aspect-ratio: null;
+        width: 91%;
+        height: 45%;
+        flex-direction: row;
+    }
+
     #most-popular .card {
-        width: 32%;
-        height: 50%;
-        justify-content: space-between;
+        width: 31%;
+        height: 100%;
     }
 
-    #most-popular strong {
-        font-size: 14px;
+    #most-popular .card-description {
+        font-size: 90%;
     }
 
-    #most-popular p {
-        font-size: 15px;
-        margin-top: 0px;
+    #most-popular h4 {
+        font-size: 90%;
     }
+
 
     /*****ACTIVITES**********/
 
@@ -692,10 +697,9 @@ footer {
     /*****LES PLUS POPULAIRES**********/
 
     #most-popular {
-        height: auto;
         order: 2;
         border-radius: 0px;
-        flex-wrap: wrap;
+        height: 620px;
     }
 
     #most-popular h2 {
@@ -708,26 +712,20 @@ footer {
 
     #most-popular .content {
         width: 89.3%;
+        height: 470px;
         padding-bottom: 40px;
-        gap: 10px;
+        flex-direction: column;
     }
 
     #most-popular .card {
-        aspect-ratio: 335/145;
         width: 100%;
-        justify-content: flex-start;
+        height: 31%;
     }
 
-    #most-popular img {
-        min-width: 40%;
-    }
-
-    #most-popular strong {
-        font-size: 1.1rem;
-    }
-
-    #most-popular p {
-        font-size: 1.1rem;
+    #most-popular .card-description {
+        height: 80%;
+        font-size: 100%;
+        line-height: 20px;
     }
 
     /*****HEBERGEMENT**********/
@@ -748,19 +746,19 @@ footer {
         width: 100%;
     }
 
-    #hebergement .card img {
+    #hebergement .card-image {
         width: 98%;
         height: 60%;
         margin: 3px auto;
     }
 
-    #hebergement .card-container {}
+    #hebergement .card-description {
+        height: 30%;
+    }
 
-    #hebergement .description {}
-
-    #hebergement .card strong {}
-
-    #hebergement .card p {}
+    #hebergement .description {
+        line-height: 20px;
+    }
 
     #show-more {
         display: none;
