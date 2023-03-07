@@ -505,7 +505,7 @@ footer {
     }
 
     #most-popular .content {
-        aspect-ratio: null;
+        aspect-ratio: none;
         width: 91%;
         height: 45%;
         flex-direction: row;
